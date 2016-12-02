@@ -9,5 +9,5 @@ You can read this article to learn about Hanio tower:[《个人故事：汉诺�
 This version is just for fun, and I don't wanna to update on GitHub.<br>
 这只是个兴趣版本，我也不打算再在GitHub上迭代。<br>
 <br>
-If you are interseted in the improved version, please star this repositary and Email me:[](love-nankai@163.com)
-如果你对丰富版感兴趣，可以star这个工程，然后向我的邮箱发邮件：[](love-nankai@163.com)
+If you are interseted in the improved version, please star this repositary and Email me:love-nankai@163.com<br>
+如果你对丰富版感兴趣，可以star这个工程，然后向我的邮箱发邮件：love-nankai@163.com<br>
