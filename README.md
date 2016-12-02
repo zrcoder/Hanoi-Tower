@@ -6,6 +6,7 @@ You can read this article to learn about Hanio tower:[《个人故事：汉诺�
 <br>
 ![](https://github.com/DingHub/ScreenShots/blob/master/Hanio/Hanio.gif)
 <br>
+<br>
 This version is just for fun, and I don't wanna to update on GitHub.<br>
 这只是个兴趣版本，我也不打算再在GitHub上迭代。<br>
 <br>
