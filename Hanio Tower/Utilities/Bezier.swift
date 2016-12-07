@@ -29,9 +29,9 @@ struct Bezier {
             animation.duration = duration
             animation.isRemovedOnCompletion = false
             view.layer.add(animation, forKey: "BezierMoving")
-        }) { flag in
-            guard flag else { return }
-            view.frame.origin = to
+        })
+        run(after: duration) {
+            view.layer.removeAnimation(forKey: "BezierMoving")
             completion?()
         }
     }

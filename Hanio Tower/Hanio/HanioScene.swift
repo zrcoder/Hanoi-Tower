@@ -54,7 +54,7 @@ class HanioScene: UIView {
             guard newValue != p_disks else { return }
             guard newValue <= HanioConst.limitedDisks else { return }
             p_disks = newValue
-            layoutPoles()
+            refresh()
         }
     }
     var p_disks = 0
@@ -151,26 +151,15 @@ class HanioScene: UIView {
                 return
             }
         }
-        let diskSize = diskToMove.frame.size
-        let fromPoint = CGPoint(x: fromPole.center.x - 0.5 * diskSize.width, y: fromPole.frame.origin.y)
-        let toPoint = CGPoint(x: toPole.center.x - 0.5 * diskSize.width, y: toPole.frame.origin.y)
+        let fromPoint = CGPoint(x: fromPole.center.x, y: fromPole.frame.origin.y)
+        let toPoint = CGPoint(x: toPole.center.x, y: toPole.frame.origin.y)
         
         diskToMove.frame.origin = fromPoint
         addSubview(diskToMove)
         
-//        let controlPoint = CGPoint(x: (fromPoint.x + toPoint.x) * 0.5, y: min(fromPoint.y, toPoint.y) - 20)
-//        
-//        diskToMove.bezierMove(to: toPoint, control: controlPoint, duration: 0.8) {
-//            toPole.push(diskToMove)
-//            clear()
-//            if self.poles[0].total == self.disks {
-//                self.successAction()
-//            }
-//        }
+        let controlPoint = CGPoint(x: (fromPoint.x + toPoint.x) * 0.5, y: min(fromPoint.y, toPoint.y) - 50 * scale320)
         
-        UIView.animate(withDuration: 0.8, animations: {
-            diskToMove.frame.origin = toPoint
-        }) { _ in
+        diskToMove.bezierMove(to: toPoint, control: controlPoint, duration: 0.4) {
             toPole.push(diskToMove)
             clear()
             if self.poles[0].total == self.disks {

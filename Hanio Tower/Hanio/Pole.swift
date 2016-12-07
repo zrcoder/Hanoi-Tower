@@ -25,13 +25,16 @@ class Pole: UIView {
         guard capacity > 0 && diskHeight > 1 && bounds.size.width > 1 else { return }
         
         let capacityF: CGFloat = CGFloat(capacity)
-        let x = (bounds.size.width - 1) * 0.5
-        let y = diskHeight
+        let width = HanioConst.poleWidth
         let height = (capacityF + 0.5) * diskHeight
-        let frame = CGRect(x: x, y: y, width: 1, height: height)
+        let x = (bounds.size.width - width) * 0.5
+        let y = diskHeight
+        
+        let frame = CGRect(x: x, y: y, width: width, height: height)
         
         verticalPole.frame = frame
-        verticalPole.backgroundColor = HanioConst.poleColor
+        verticalPole.layer.cornerRadius = width * 0.5
+        verticalPole.layer.backgroundColor = HanioConst.poleColor.cgColor
         addSubview(verticalPole)
     }
     var total: Int { return disks.count }
@@ -59,7 +62,7 @@ class Pole: UIView {
     }
     
     func peek() -> Disk? {
-        return disks.first
+        return disks.last
     }
     
     func clear()  {

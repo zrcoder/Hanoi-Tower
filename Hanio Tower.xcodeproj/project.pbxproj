@@ -48,6 +48,7 @@
 		84AC95281DF13A6B002B626C /* UIImage+CutCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC95051DF13A6B002B626C /* UIImage+CutCircle.swift */; };
 		84AC95291DF13A6B002B626C /* UIView+ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC95071DF13A6B002B626C /* UIView+ParentViewController.swift */; };
 		84AC952A1DF13A6B002B626C /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC95081DF13A6B002B626C /* UIView+Snapshot.swift */; };
+		84AC952D1DF13CCE002B626C /* SwipeableCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC952C1DF13CCE002B626C /* SwipeableCards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		84AC95051DF13A6B002B626C /* UIImage+CutCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CutCircle.swift"; sourceTree = "<group>"; };
 		84AC95071DF13A6B002B626C /* UIView+ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ParentViewController.swift"; sourceTree = "<group>"; };
 		84AC95081DF13A6B002B626C /* UIView+Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
+		84AC952C1DF13CCE002B626C /* SwipeableCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableCards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 		84AC94241DF138BC002B626C /* Hanio Tower */ = {
 			isa = PBXGroup;
 			children = (
+				84AC952B1DF13CCE002B626C /* SwipeableCards */,
 				84AC94DF1DF13A6B002B626C /* Common */,
 				84AC94E41DF13A6B002B626C /* Const */,
 				84AC94E61DF13A6B002B626C /* Hanio */,
@@ -220,8 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				84AC94E71DF13A6B002B626C /* Disk.swift */,
-				84AC94E81DF13A6B002B626C /* HanioScene.swift */,
 				84AC94E91DF13A6B002B626C /* Pole.swift */,
+				84AC94E81DF13A6B002B626C /* HanioScene.swift */,
 			);
 			path = Hanio;
 			sourceTree = "<group>";
@@ -289,6 +292,14 @@
 				84AC95081DF13A6B002B626C /* UIView+Snapshot.swift */,
 			);
 			path = "UIView Extensions";
+			sourceTree = "<group>";
+		};
+		84AC952B1DF13CCE002B626C /* SwipeableCards */ = {
+			isa = PBXGroup;
+			children = (
+				84AC952C1DF13CCE002B626C /* SwipeableCards.swift */,
+			);
+			path = SwipeableCards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +456,7 @@
 				84AC951A1DF13A6B002B626C /* ImageHelper.swift in Sources */,
 				84AC95261DF13A6B002B626C /* String+TextSize.swift in Sources */,
 				84AC95181DF13A6B002B626C /* Handy.swift in Sources */,
+				84AC952D1DF13CCE002B626C /* SwipeableCards.swift in Sources */,
 				84AC952A1DF13A6B002B626C /* UIView+Snapshot.swift in Sources */,
 				84AC95281DF13A6B002B626C /* UIImage+CutCircle.swift in Sources */,
 				84AC95111DF13A6B002B626C /* Bezier.swift in Sources */,
@@ -612,11 +624,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Hanio Tower/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ding.Hanio-Tower";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -624,11 +638,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Hanio Tower/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ding.Hanio-Tower";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

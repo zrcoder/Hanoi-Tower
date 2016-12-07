@@ -12,7 +12,7 @@ struct HanioConst {
     static let polesCount = 3
     
     static let limitedDisks = 5
-    static let diskColors = [Color.red, Color.orange, Color.yellow, Color.green, Color.blue]
+    static let diskColors = [Color.red, Color.yellow, Color.green, Color.blue, Color.purple]
     
     static let diskHeight: CGFloat = 15 * scale320
     
@@ -21,4 +21,14 @@ struct HanioConst {
     
     
     static let poleColor = Color.cyan
+    static let poleWidth: CGFloat = 5
+}
+
+struct CardsConst {
+    static let offset: (x: CGFloat, y: CGFloat) = (2, 5)
+    static let colors = [Color(hex: 0x1abc9c),
+                         Color(hex: 0x1BA39C),
+                         Color(hex: 0x3498D8),
+                         Color(hex: 0x8e44ad),
+                         Color(hex: 0xFDE3A7),]
 }

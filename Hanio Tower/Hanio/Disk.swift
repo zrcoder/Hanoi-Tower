@@ -33,3 +33,9 @@ class Disk: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+extension Disk {
+    override var description: String {
+        return "Disk \(number)"
+    }
+}
